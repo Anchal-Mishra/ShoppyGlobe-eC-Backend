@@ -22,53 +22,45 @@ Welcome to the **ShoppyGlobe E-Commerce Application**, a powerful and scalable b
 
 ## 📌 Installation Guide
 ### 1️⃣ Clone the Repository
-```sh
 git clone  https://github.com/Anchal-Mishra/ShoppyGlobe-eC-Backend.git
 cd your-repo-name
-```
+
 
 ### 2️⃣ Install Dependencies
-```sh
 npm install
-```
 
 ### 3️⃣ Create a `.env` File
-```sh
 touch .env
-```
+
 Inside `.env`, add the following:
-```env
+
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
-JWT_SECRET=your_jwt_secret_key
+JWT_SECRET=my_jwt_secret_key
 PORT=5000
-```
+
 
 ### 4️⃣ Start the Server
-```sh
 npm run dev   # Using nodemon for live reload
 # or
 node server.js
-```
-
 ---
 
 ## 🔗 API Endpoints
 ### 🔐 User Authentication
 #### ➤ Register User
-**Endpoint:** `POST /api/auth/register`
-```json
+**Endpoint:** `POST /api/register`
 {
-  "username": "john_doe",
-  "email": "john@example.com",
-  "password": "password123"
+  "username": "anchal",
+  "email": "anchal@gmail.com",
+  "password": "78965123"
 }
-```
+
 #### ➤ Login User
-**Endpoint:** `POST /api/auth/login`
-```json
+**Endpoint:** `POST /api/login`
+
 {
-  "email": "john@example.com",
-  "password": "password123"
+  "email": "anchal@gmail.com",
+  "password": "yourpassword123"
 }
 ```
 
@@ -90,42 +82,38 @@ node server.js
 ```
 #### ➤ Update a Product
 **Endpoint:** `PUT /api/product/:id`
-```json
 {
   "price": 89.99
 }
-```
+
 #### ➤ Delete a Product
 **Endpoint:** `DELETE /api/product/:id`
 
 ### 🛒 Cart Management
 #### ➤ Add Item to Cart
 **Endpoint:** `POST /api/cart`
-```json
+
 {
   "productId": "12345",
   "quantity": 2
 }
-```
+
 #### ➤ Get User Cart
 **Endpoint:** `GET /api/cart`
 
 #### ➤ Update Cart Item
 **Endpoint:** `PUT /api/cart/:id`
-```json
+
 {
   "quantity": 3
 }
-```
+
 #### ➤ Remove Item from Cart
 **Endpoint:** `DELETE /api/cart/:id`
-
----
 
 ## 🔒 Middleware
 - `authMiddleware.js` - Protects routes using JWT authentication.
 
----
 
 
 
