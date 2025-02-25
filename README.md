@@ -23,7 +23,7 @@ Welcome to the **ShoppyGlobe E-Commerce Application**, a powerful and scalable b
 ## 📌 Installation Guide
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo-name.git
+git clone  https://github.com/Anchal-Mishra/ShoppyGlobe-eC-Backend.git
 cd your-repo-name
 ```
 
