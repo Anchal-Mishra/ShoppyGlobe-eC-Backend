@@ -1,6 +1,6 @@
-# 🛒 E-Commerce API
+# 🛒 ShoppyGlobe E-Commerce Application
 
-Welcome to the **E-Commerce API**, a powerful and scalable backend built with **Node.js** and **Express.js**, designed to handle user authentication, product management, and cart functionalities efficiently. This project leverages **MongoDB** as the database and **JWT** for secure authentication.
+Welcome to the **ShoppyGlobe E-Commerce Application**, a powerful and scalable backend built with **Node.js** and **Express.js**, designed to handle user authentication, product management, and cart functionalities efficiently. This project leverages **MongoDB** as the database and **JWT** for secure authentication.
 
 ---
 
@@ -127,10 +127,5 @@ node server.js
 
 ---
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
----
-
-🎯 **Happy Coding!** 🚀
 
